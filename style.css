@@ -1,0 +1,155 @@
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+}
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img{
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 50%;
+}
+
+h2{
+    margin-bottom: 30px;
+    color: var(--title-color);
+    font-size: 16px;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.ContainerContent{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--body-bg-color);
+}
+
+.Content{
+    margin: 20px;
+}
+
+.SendEmail{
+    margin: 26px;
+}
+
+.BtnSendEmail{
+    cursor: pointer;
+    background-color: var(--bg-button-color);
+    width: 4%;
+}
+
+
+.SendEmail input{
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    width: 50%;
+    padding: 10px;
+}
+
+
+.Email{
+    display: flex ;
+    flex-direction: row;
+    
+}
+
+.Email img {
+    margin: 0;
+    padding: 10px;
+}
+
+.Email input {
+    margin-top: 0;
+}
+
+
+.Content h1{
+    color: var(--title-color);
+}
+
+.Content h3, p{
+    color: var(--text-color);
+}
+
+.ContainerImage{
+    background-image: url('./assets/read_news.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+
+@media screen and (max-width: 400px) { 
+
+    html, body{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        min-height: 100%;
+        background-color: var(--body-bg-color);
+    }
+
+    img{
+        margin: 20px;
+    }
+    
+    h1{
+        font-size: 25px;
+    }
+
+    h3,p {
+        font-size: 15px;
+    }
+
+    .container{
+        height: 100%;
+        min-height: 100%;
+        display: flex;
+        align-items: center ;       
+        justify-content: center;
+        
+    }
+
+
+    .Content{
+        margin: 20px;
+    }
+
+    .ContainerImage{
+        display: none;
+    }
+
+
+    .SendEmail input{
+        width: 75%;
+    }
+
+    .BtnSendEmail{
+        width: 6%;
+    }
+
+    .Logo img {
+        width: 80%;
+    }
+}
